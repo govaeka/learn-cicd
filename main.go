@@ -94,6 +94,6 @@ func main() {
 	}
 
 	log.Printf("Serving on port: %s\n", port)
-	return
+	os.Exit(1)
 	log.Fatal(srv.ListenAndServe())
 }
