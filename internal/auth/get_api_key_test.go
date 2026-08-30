@@ -39,7 +39,6 @@ func TestGetAPIKey(t *testing.T) {
 		},
 	}
 
-	// comment for testing purposes
 	for i, test := range tests {
 		t.Run(fmt.Sprintf("TestGetAPIKey Case #%v:", i), func(t *testing.T) {
 			header := http.Header{}
