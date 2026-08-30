@@ -26,5 +26,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Formatting Check
+      - name: Formatting Checks
         run: test -z $(go fmt ./...)
