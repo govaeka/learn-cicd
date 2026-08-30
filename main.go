@@ -18,7 +18,7 @@ import (
 )
 
 type apiConfig struct {
-	DB *database.Queries
+	DB database.Queries
 }
 
 //go:embed static/*
@@ -94,6 +94,5 @@ func main() {
 	}
 
 	log.Printf("Serving on port: %s\n", port)
-	os.Exit(1)
 	log.Fatal(srv.ListenAndServe())
 }
